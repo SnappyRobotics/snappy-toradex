@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote alias="repo" fetch="http://github.com/Angstrom-distribution" name="githa" />
+  <remote alias="repo" fetch="http://github.com/Freescale" name="githf" />
+  <remote alias="repo" fetch="http://github.com/OSSystems" name="githo" />
+  <remote alias="repo" fetch="http://github.com/meta-qt5" name="githq" />
+  <remote alias="repo" fetch="http://github.com/watatuki" name="githt" />
+  <remote alias="repo" fetch="http://github.com/imyller" name="gitimyller" />
+  <remote alias="repo" fetch="http://git.linaro.org/git-ro/openembedded" name="linaro" />
+  <remote alias="repo" fetch="http://github.com/openembedded" name="oe" />
+  <remote alias="repo" fetch="http://git.toradex.com" name="trdx" />
+  <remote alias="repo" fetch="https://git.yoctoproject.org/git" name="yocto" />
+  <remote alias="repo" fetch="http://github.com/SnappyRobotics" name="snappy" />
+
+  <default sync-j="24" />
+
+  <project name="bitbake.git" path="layers/openembedded-core/bitbake" remote="oe" revision="59a3f391ac5ac194f30d11a39676356464269d55" upstream="1.32" />
+  <project name="meta-angstrom.git" path="layers/meta-angstrom" remote="githa" revision="ee90314737ce65dcc902a75ea7a1941bb38401aa" upstream="angstrom-v2016.12-yocto2.2" />
+  <project name="meta-browser.git" path="layers/meta-browser" remote="githo" revision="1edcce7791b4cee9a515c1f11b351753a4f8b12e" upstream="morty" />
+  <project name="meta-freescale-3rdparty.git" path="layers/meta-freescale-3rdparty" remote="githf" revision="69ed94bb781a9c1bfbba4fb3026e4cbf3a194878" upstream="morty" />
+  <project name="meta-freescale-distro.git" path="layers/meta-freescale-distro" remote="githf" revision="ae27e8a8a068b960d6c1219f50b2e8ccc97f0bea" upstream="morty" />
+  <project name="meta-freescale.git" path="layers/meta-freescale" remote="githf" revision="6ec09e6a0f09d1cb9c3761b339590c0a0baeeeb3" upstream="morty" />
+  <project name="meta-jetson-tk1.git" path="layers/meta-jetson-tk1" remote="githt" revision="e8b87fe8da7c6fcffa37ab245f50082953cc1ee1" upstream="Morty" />
+  <project name="meta-linaro.git" path="layers/meta-linaro" remote="linaro" revision="407fe60740240b3115531cbed129f1e186bfbe3e" upstream="morty" />
+  <project name="meta-lxde.git" path="layers/meta-lxde" remote="trdx" revision="cb926caf26762a68bb735fd8bd20843fdf1b0cfe" upstream="morty-next" />
+  <project name="meta-openembedded.git" path="layers/meta-openembedded" remote="oe" revision="1efa5d623bc64659b57389e50be2568b1355d5f7" upstream="morty" />
+  <project name="meta-qt4" path="layers/meta-qt4" remote="yocto" revision="2c7f8df9039be498f8a2232d1428adb7f4e5e800" upstream="morty" />
+  <project name="meta-qt5.git" path="layers/meta-qt5" remote="githq" revision="9aa870eecf6dc7a87678393bd55b97e21033ab48" upstream="morty" />
+
+  <project name="meta-toradex-bsp-common.git" path="layers/meta-toradex-bsp-common" remote="trdx" revision="05faa6a4346eeb7631fe72bcbb9aa7d414bee791" upstream="morty" />
+  <project name="meta-toradex-demos.git" path="layers/meta-toradex-demos" remote="trdx" revision="9fa810182cbb085554ad3a596db6dbf1fc9a0a73" upstream="morty" />
+
+  <project name="meta-nodejs.git" path="layers/meta-snappy/meta-nodejs" remote="gitimyller" revision="5878455edb0b62cbd501927466a19700fe4c70e6" upstream="morty" />
+  <project name="meta-nodejs-contrib.git" path="layers/meta-snappy/meta-nodejs-contrib" remote="gitimyller" revision="0ef317d2b7e59a4f10f79721fefb11c12de446d0" upstream="morty" />
+
+  <project name="meta-snappy-setup.git" path="layers/meta-snappy/meta-snappy-setup" remote="snappy" revision="master">
+    <copyfile dest="export" src="export.sh" />
+  </project>
+
+  <project name="meta-toradex-nxp.git" path="layers/meta-toradex-nxp" remote="trdx" revision="ee77ef53d35284bcacc77e849dd30a36fe263ef2" upstream="morty" />
+  <project name="meta-toradex-tegra.git" path="layers/meta-toradex-tegra" remote="trdx" revision="c411daec746975195f1590c727449adffb8587e0" upstream="morty" />
+  <project name="openembedded-core.git" path="layers/openembedded-core" remote="oe" revision="c8d96b10ee3bc2eae0fd269d2564286fd0bc82ed" upstream="morty" />
+</manifest>
