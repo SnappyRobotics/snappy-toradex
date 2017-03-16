@@ -31,7 +31,6 @@
   <project name="meta-toradex-demos.git" path="layers/meta-toradex-demos" remote="trdx" revision="9fa810182cbb085554ad3a596db6dbf1fc9a0a73" upstream="morty" />
 
   <project name="meta-nodejs.git" path="layers/meta-snappy/meta-nodejs" remote="gitimyller" revision="5878455edb0b62cbd501927466a19700fe4c70e6" upstream="morty" />
-  <project name="meta-nodejs-contrib.git" path="layers/meta-snappy/meta-nodejs-contrib" remote="gitimyller" revision="0ef317d2b7e59a4f10f79721fefb11c12de446d0" upstream="morty" />
 
   <project name="meta-snappy-setup.git" path="layers/meta-snappy/meta-snappy-setup" remote="snappy" revision="master">
     <copyfile dest="export" src="export.sh" />
