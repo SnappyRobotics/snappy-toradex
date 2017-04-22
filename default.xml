@@ -11,6 +11,7 @@
   <remote alias="repo" fetch="http://git.toradex.com" name="trdx" />
   <remote alias="repo" fetch="https://git.yoctoproject.org/git" name="yocto" />
   <remote alias="repo" fetch="http://github.com/SnappyRobotics" name="snappy" />
+  <remote alias="repo" fetch="http://github.com/bulwahn" name="ros" />
 
   <default sync-j="24" />
 
@@ -35,6 +36,8 @@
   <project name="meta-snappy-setup.git" path="layers/meta-snappy/meta-snappy-setup" remote="snappy" revision="master">
     <copyfile dest="export" src="export.sh" />
   </project>
+
+  <project name="meta-ros.git" path="layers/meta-ros" remote="ros" revision="0e470810360ef659fa25eee8437d15c30d2414c2" />
 
   <project name="meta-toradex-nxp.git" path="layers/meta-toradex-nxp" remote="trdx" revision="ee77ef53d35284bcacc77e849dd30a36fe263ef2" upstream="morty" />
   <project name="meta-toradex-tegra.git" path="layers/meta-toradex-tegra" remote="trdx" revision="c411daec746975195f1590c727449adffb8587e0" upstream="morty" />
