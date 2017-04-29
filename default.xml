@@ -36,6 +36,7 @@
   <project name="meta-snappy-setup.git" path="layers/meta-snappy/meta-snappy-setup" remote="snappy" revision="master">
     <copyfile dest="export" src="export.sh" />
   </project>
+  <project name="meta-apalis-t30.git" path="layers/meta-snappy/meta-apalis-t30" remote="snappy" revision="master"/>
 
   <project name="meta-ros.git" path="layers/meta-ros" remote="ros" revision="addc15b71306e984a34d105b0b308d82f6775aae" />
 
